@@ -14,11 +14,12 @@ const result = [
 */
 let result = [];
 const uniqueIndex = [... new Set(items.map(item => item.id))];
-for (let i = 1; i <= uniqueIndex.length; i++) {
+console.log(uniqueIndex);
+for (let key of uniqueIndex) {
     result.push(
         {
-            'id': i,
-            'names': items.filter(item => item.id == i).map(x => x.name)
+            'id': key,
+            'names': items.filter(item => item.id == key).map(x => x.name)
         }
     )
 }
