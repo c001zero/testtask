@@ -14,7 +14,6 @@ const result = [
 */
 let result = [];
 const uniqueIndex = [... new Set(items.map(item => item.id))];
-console.log(uniqueIndex);
 for (let key of uniqueIndex) {
     result.push(
         {
